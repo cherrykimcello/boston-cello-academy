@@ -5,7 +5,8 @@
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <meta name="description" content="Boston Cello Academy offers individualized cello instruction with Dr. Cherry Kim, emphasizing healthy technique, musicianship, artistry, collaboration, and performance.">
 <title>Boston Cello Academy | Cello Lessons with Dr. Cherry Kim</title>
-<link rel="icon" type="image/png" href="assets/favicon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32.png">
+<link rel="apple-touch-icon" href="assets/favicon-180.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,400;1,500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
@@ -28,10 +29,65 @@ footer{padding:35px 7vw;display:flex;justify-content:space-between;align-items:c
 @media(max-width:950px){.pillars{grid-template-columns:1fr 1fr}.journey-grid{grid-template-columns:1fr 1fr}.photo{height:350px}}
 @media(max-width:760px){.site-header{height:76px}.brand{height:66px;width:235px}.brand img{width:235px}.menu{display:block}.site-header nav{display:none;position:absolute;top:76px;left:0;right:0;padding:25px 7vw;background:#f7f4ed;flex-direction:column;align-items:flex-start}.site-header nav.open{display:flex}.hero,.teacher,.contact{grid-template-columns:1fr;padding:65px 7vw}.hero{gap:45px}.hero-image{order:-1;height:54vh;min-height:390px}.hero-image img{object-position:50% 45%}.hero-actions{align-items:flex-start;flex-direction:column;gap:16px}.approach,.journey,.experience,.testimonials{padding:80px 7vw}.section-intro h2,.teacher h2,.experience h2,.contact h2{font-size:48px}.pillars,.journey-grid,.experience-grid,.quote-grid{grid-template-columns:1fr}.photo{height:340px}.teacher-photo{height:520px}.journey-grid{gap:32px}footer{flex-direction:column;align-items:flex-start;gap:15px}}
 </style>
+
+
+
+
+<style id="exact-approved-brand">
+.site-header .brand{
+  width:auto!important;
+  height:62px!important;
+  display:flex!important;
+  align-items:center!important;
+  gap:12px!important;
+  text-decoration:none!important;
+  overflow:visible!important;
+  flex:0 0 auto!important;
+}
+.site-header .brand-logo-exact{
+  display:block!important;
+  width:52px!important;
+  height:52px!important;
+  object-fit:contain!important;
+  object-position:center!important;
+  transform:none!important;
+  mix-blend-mode:normal!important;
+}
+.site-header .brand-wordmark{
+  display:block!important;
+  color:#25272a!important;
+  font-family:Georgia, "Times New Roman", serif!important;
+  font-size:17px!important;
+  font-weight:400!important;
+  letter-spacing:.16em!important;
+  line-height:1!important;
+  white-space:nowrap!important;
+}
+.footer-brand img{
+  width:48px!important;
+  height:48px!important;
+  object-fit:contain!important;
+  border-radius:0!important;
+  mix-blend-mode:normal!important;
+}
+@media(max-width:900px){
+  .site-header .brand-wordmark{font-size:14px!important;letter-spacing:.12em!important}
+  .site-header .brand-logo-exact{width:46px!important;height:46px!important}
+}
+@media(max-width:760px){
+  .site-header .brand{height:48px!important;gap:0!important}
+  .site-header .brand-logo-exact{width:42px!important;height:42px!important}
+  .site-header .brand-wordmark{display:none!important}
+}
+</style>
+
 </head>
 <body>
 <header class="site-header">
-  <a class="brand" href="#top"><img src="assets/bca-logo.jpg" alt="Boston Cello Academy"></a>
+  <a class="brand" href="#top" aria-label="Boston Cello Academy home">
+      <img class="brand-logo-exact" src="assets/bca-logo-exact.png" alt="">
+      <span class="brand-wordmark">BOSTON CELLO ACADEMY</span>
+    </a>
   <button class="menu" aria-label="Toggle navigation">☰</button>
   <nav><a href="#approach">Approach</a><a href="#journey">Student Journey</a><a href="#teacher">Dr. Cherry Kim</a><a href="#testimonials">Testimonials</a><a class="nav-button" href="#contact">Inquire</a></nav>
 </header>
@@ -59,6 +115,6 @@ footer{padding:35px 7vw;display:flex;justify-content:space-between;align-items:c
 <section class="testimonials" id="testimonials"><div class="section-intro light"><p class="eyebrow">STUDENTS &amp; FAMILIES</p><h2>What they say.</h2></div><div class="quote-grid"><blockquote>“Cherry is picky on technique but is fun and creative... the dosage of strictness is just right enough to drive an individual to progress further.”<cite>— Susan S.</cite></blockquote><blockquote>“Her dedication and devotion to students have really impressed us... We feel so lucky to have her as our daughter’s cello teacher.”<cite>— Amy L.</cite></blockquote><blockquote>“As an adult learner, she was super patient but thorough... I progressed much more than I was expecting.”<cite>— Shabnam G.</cite></blockquote></div></section>
 <section class="contact" id="contact"><div class="contact-copy"><p class="eyebrow">LET'S TALK</p><h2>Ready to begin?</h2><p>Tell me a little about yourself or your child, previous musical experience, and what you hope to accomplish. I’ll be in touch about the next step.</p><p class="location">Boston Cello Academy · Greater Boston, Massachusetts</p></div><form action="https://formspree.io/f/YOUR_FORM_ID" method="POST"><label>Name<input name="name" required></label><label>Email<input type="email" name="email" required></label><label>Student age <span>(optional)</span><input name="student-age"></label><label>Tell me about your goals<textarea name="message" rows="5" required></textarea></label><button class="button" type="submit">Send inquiry</button></form></section>
 </main>
-<footer><div class="footer-brand"><img src="assets/bca-mark.jpg" alt=""><div><strong>BOSTON CELLO ACADEMY</strong><p>Cello instruction with Dr. Cherry Kim</p></div></div><p>© 2026 Boston Cello Academy</p></footer>
+<footer><div class="footer-brand"><img src="assets/bca-logo-exact.png" alt=""><div><strong>BOSTON CELLO ACADEMY</strong><p>Cello instruction with Dr. Cherry Kim</p></div></div><p>© 2026 Boston Cello Academy</p></footer>
 <script>const btn=document.querySelector('.menu'),nav=document.querySelector('nav');btn.addEventListener('click',()=>nav.classList.toggle('open'));document.querySelectorAll('nav a').forEach(a=>a.addEventListener('click',()=>nav.classList.remove('open')));</script>
 </body></html>
